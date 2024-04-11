@@ -15,6 +15,7 @@ class Tokenizer {
 public:
     Tokenizer(std::string name);
     Token getToken();
+    char getNextChar();
 
 private:
     int timestamp;

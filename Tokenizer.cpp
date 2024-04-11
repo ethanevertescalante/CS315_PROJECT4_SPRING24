@@ -10,9 +10,42 @@ Tokenizer::Tokenizer(std::string name):  timestamp{1},
                                          inputFileName{name} {
         inputStream.open(inputFileName, std::ios::in);
 }
+char Tokenizer::getNextChar() {
+    char c;
+    inputStream.get(c);
+    return c;
+}
 
 Token Tokenizer::getToken() {
-
+    Token token(timestamp);
+    char c = getNextChar();
+    if (inputStream.eof()) {
+        token.isEndOfFile() = true;
+    } else if (c == '\n') {
+        token.isEndOfLine() = true;
+    } else if (c == ':') {
+        token.isColon() = true;
+    } else if (c == '\t') {
+        token.isTab() = true;
+    } else {
+        std::string name;
+        while (c != ':' && c != '\n' && c != '\t' && !inputStream.eof()) {
+            name += c;
+            c = getNextChar();
+        }
+        if (c == ':') {
+            token.makeTarget(name);
+            inputStream.putback(c);
+        } else if (c == '\n') {
+            token.makeCommand(name);
+            inputStream.putback(c);
+        } else if (c == '\t') {
+            token.isTab() = true;
+            inputStream.putback(c);
+        }
+    }
+    return token;
+ /*
 
     if (!inputStream.is_open()) {
         std::cout << "Tokenizer::getToken() called with a stream that is not open." << std::endl;
@@ -85,9 +118,23 @@ Token Tokenizer::getToken() {
 
 
 
-    return token;
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

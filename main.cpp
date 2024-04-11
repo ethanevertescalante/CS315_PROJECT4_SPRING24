@@ -38,14 +38,10 @@ int main(int argc, const char *argv[] )
     Tokenizer tokenizer(argv[1]);
     Token token = tokenizer.getToken();
     // get the first token to start the while loop
-    for(int i = 0; i < 3; i++)
-    {
+    while(!token.isEndOfFile()){
         token.print();
         token = tokenizer.getToken();
     }
-
-
-
 
     return 0;
 }
