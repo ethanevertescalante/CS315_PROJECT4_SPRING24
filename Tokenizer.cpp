@@ -19,6 +19,7 @@ char Tokenizer::getNextChar() {
 Token Tokenizer::getToken() {
     Token token(timestamp);
     char c = getNextChar();
+    char peek = inputStream.peek();
     if (inputStream.eof()) {
         token.isEndOfFile() = true;
     } else if (c == '\n') {
@@ -28,22 +29,43 @@ Token Tokenizer::getToken() {
     } else if (c == '\t') {
         token.isTab() = true;
     } else {
-        std::string name;
+        std::string target;
+        std::string command;
+        std::string dependent;
+        std::vector<std::string> dependents;
         while (c != ':' && c != '\n' && c != '\t' && !inputStream.eof()) {
-            name += c;
+            target += c;
             c = getNextChar();
         }
         if (c == ':') {
-            token.makeTarget(name);
+            token.makeTarget(target);
             inputStream.putback(c);
-        } else if (c == '\n') {
-            token.makeCommand(name);
+        }else if(c == ' '){
+          getNextChar();
+          while(c != '\n') {
+              dependent += c;
+              if(c == ' '){
+                  dependents.push_back(dependent);
+              }
+              getNextChar();
+
+          }
+            if(c == '\n') {
+                token.makeDepenency(dependents);
+                inputStream.putback(c);
+            }
+
+
+        }else if (c == '\n') {
+            token.makeCommand(command);
             inputStream.putback(c);
         } else if (c == '\t') {
             token.isTab() = true;
             inputStream.putback(c);
         }
+
     }
+
     return token;
  /*
 

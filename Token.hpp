@@ -29,7 +29,7 @@ public:
     std::string nameOfCommand();
 
     void makeTarget(std::string fileName);
-    //void makeDepenency(std::string);
+    void makeDepenency(std::vector<std::string> dependents);
     void makeCommand(std::string command);
     void print();
 
@@ -40,7 +40,7 @@ private:
 
     std::string _strTarget;
     std::string _strCommand;
-    //std::vector<std::string> dependencyCounter;
+    std::vector<std::string> dependencyCounter;
     int _timestamp;
 };
 
