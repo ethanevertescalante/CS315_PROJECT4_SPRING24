@@ -20,8 +20,6 @@ private:
     int timestamp;
     std::string inputFileName;
     std::ifstream inputStream;
-
-    bool charOfInterest(char c);
 };
 
 

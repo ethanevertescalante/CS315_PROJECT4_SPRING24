@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.27)
+project(CS315_PROJECT4_SPRING24)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+
+add_executable(CS315_PROJECT4_SPRING24
+        main.cpp
+        Token.cpp
+        Token.hpp
+        Tokenizer.cpp
+        Tokenizer.hpp)
