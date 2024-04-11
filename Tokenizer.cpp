@@ -36,45 +36,51 @@ Token Tokenizer::getToken() {
     }
 
 
-    if(isalpha(carryingChar)) {
-        //getting Target
-        while (carryingChar != colon) {
+        inputStream.get(carryingChar);
+        while (carryingChar != colon && !token.isColon()) {
             targetName += carryingChar;
             inputStream.get(carryingChar);
 
+            if (carryingChar == colon) {
+                token.makeTarget(targetName);
+                inputStream.putback(carryingChar);
+                return token;
+            }
+
         }
 
-        token.makeTarget(targetName);
-    }
 
-    if(carryingChar == colon){
-        token.isColon() = true;
-    }
+        if (carryingChar == colon) {
+            token.isColon() = true;
+        }
 
-    /*
-     *
-     *
-     * dependencies
-     *
-     *
-     *
-     */
+        if (carryingChar == endl) {
 
-    if(peekingChar == endl){
-        token.isColon() = false;
-        token.isEndOfLine() = true;
-        inputStream.get(carryingChar);
+            token.isEndOfLine() = true;
+        }
 
-
-        if(peekingChar == tab){
-            token.isEndOfLine() = false;
+        if (carryingChar == tab) {
             token.isTab() = true;
-            getline(inputStream, commandName);
-            token.makeCommand(commandName);
-
         }
-    }
 
+
+
+
+
+
+
+/*
+    while(carryingChar != endl) {
+
+         *
+         *
+         * dependencies
+         *
+         *
+         *
+
+    }
+*/
 
 
 

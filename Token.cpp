@@ -46,25 +46,9 @@ void Token::print() {
 
     if(isTarget()){
         std::cout << "this is the target: " << _strTarget << std::endl;
-    }
-
-    if(isCommand()){
-        std::cout << "this is the Command: " << _strCommand << std::endl;
-    }
-
-    if(isEndOfLine()){
-        std::cout << "this is an Endl: " << std::endl;
-    }
-
-    if(isColon()){
-        std::cout << "this is a Colon: " << std::endl;
-    }
-
-    if(isTab()){
-        std::cout << "this is a tab: " << std::endl;
-    }
-
-    if(isDependency()){
+    }else if(isColon()){
+        std::cout << "Colon is here" << std::endl;
+    }else if(isDependency()){
         std::cout << "these are the dependencies: ";
 
         /*
@@ -73,10 +57,16 @@ void Token::print() {
             dependencyCounter.pop_back();
         }
         */
+    }else if(isTab()){
+        std::cout << "tab character here" << std::endl;
+    }else if(isEndOfLine()){
+        std::cout << "Endl here" << std::endl;
     }
-
-    if(isEndOfFile()){
-        std::cout << "File is done, ending..." << std::endl;
+    else if(isCommand()){
+        std::cout << "this is the Command: " << _strCommand << std::endl;
+    }
+    else{
+        std::cout << "unknown token" << std::endl;
     }
 
 

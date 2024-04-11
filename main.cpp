@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cstdlib>
 #include<fstream>
+#include<cstring>
 #include "Tokenizer.hpp"
 //#include "DepGraph.hpp"
 
@@ -37,9 +38,8 @@ int main(int argc, const char *argv[] )
     Tokenizer tokenizer(argv[1]);
     Token token = tokenizer.getToken();
     // get the first token to start the while loop
-
-
-    while( ! token.isEndOfFile()) {
+    for(int i = 0; i < 3; i++)
+    {
         token.print();
         token = tokenizer.getToken();
     }
