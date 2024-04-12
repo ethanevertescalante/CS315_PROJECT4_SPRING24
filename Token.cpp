@@ -57,12 +57,13 @@ void Token::print() {
     }else if(isColon()){
         std::cout << "Colon is here" << std::endl;
     }else if(isDependency()){
-        std::cout << "these are the dependencies: ";
+        std::cout << "these are the dependencies: \n";
 
-        while(!dependencyCounter.empty()){
-            std::cout << dependencyCounter.front();
-            dependencyCounter.pop_back();
+        for(int i = 0; i < dependencyCounter.size(); i++){
+            std::cout << dependencyCounter[i] << std::endl;
         }
+
+        std::cout << "Ending Dependencies\n";
 
     }else if(isTab()){
         std::cout << "tab character here" << std::endl;

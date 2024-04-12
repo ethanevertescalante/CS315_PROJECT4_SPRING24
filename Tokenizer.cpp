@@ -30,43 +30,51 @@ Token Tokenizer::getToken() {
         token.isTab() = true;
     } else {
         std::string target;
-        std::string command;
         std::string dependent;
+        std::string command;
         std::vector<std::string> dependents;
-        while (c != ':' && c != '\n' && c != '\t' && !inputStream.eof()) {
-            target += c;
+
+        // Handle non-whitespace characters
+        while (c != ':' && c != '\n' && c != '\t' && c != ' ' && !inputStream.eof()) {
+
+            target += c; // Collect characters for target
+            command += c;
+
             c = getNextChar();
         }
+
+        //handle target
         if (c == ':') {
             token.makeTarget(target);
             inputStream.putback(c);
-        }else if(c == ' '){
-          getNextChar();
-          while(c != '\n') {
-              dependent += c;
-              if(c == ' '){
-                  dependents.push_back(dependent);
-              }
-              getNextChar();
-
-          }
-            if(c == '\n') {
-                token.makeDepenency(dependents);
-                inputStream.putback(c);
+        }else if (c == ' ') {
+            c = getNextChar();
+            while (c != '\n' && c != '\t' && !inputStream.eof()) {
+                if (c == ' ') { // Skip spaces in dependencies
+                    dependents.push_back(dependent); // Add current character to dependencies
+                    dependent = "";
+                } else {
+                    dependent += c;
+                }
+                c = getNextChar();
             }
+            dependents.push_back(dependent);
+            token.makeDepenency(dependents);
 
-
-        }else if (c == '\n') {
+        } else if (c == '\n') {
+            c = getNextChar(); // Move to the next character after '\n'
+            while (c != '\t' && c != '\n' && !inputStream.eof()) {
+                command += c; // Collect characters for command
+                c = getNextChar();
+            }
             token.makeCommand(command);
-            inputStream.putback(c);
-        } else if (c == '\t') {
-            token.isTab() = true;
-            inputStream.putback(c);
         }
-
     }
-
     return token;
+}
+
+
+
  /*
 
     if (!inputStream.is_open()) {
@@ -142,7 +150,7 @@ Token Tokenizer::getToken() {
 
 
 
-}
+
 
 
 
