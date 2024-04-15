@@ -35,8 +35,8 @@ void Token::makeTarget(std::string fileName) {
     isTarget() = true;
 }
 
-void Token::makeDepenency(std::vector<std::string> dependents) {
-    dependencyCounter = dependents;
+void Token::makeDepenency(std::string dependents) {
+    _dependency = dependents;
     isDependency() = true;
 
 }
@@ -57,13 +57,7 @@ void Token::print() {
     }else if(isColon()){
         std::cout << "Colon is here" << std::endl;
     }else if(isDependency()){
-        std::cout << "these are the dependencies: \n";
-
-        for(int i = 0; i < dependencyCounter.size(); i++){
-            std::cout << dependencyCounter[i] << std::endl;
-        }
-
-        std::cout << "Ending Dependencies\n";
+        std::cout << "Dependency: " << _dependency << std::endl;
 
     }else if(isTab()){
         std::cout << "tab character here" << std::endl;
