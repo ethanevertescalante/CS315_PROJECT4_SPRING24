@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/DepGraph.cpp" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj" "gcc" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj.d"
+  "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.cpp" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj" "gcc" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj.d"
+  "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.cpp" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj" "gcc" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj.d"
   "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.cpp" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/Token.cpp.obj" "gcc" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/Token.cpp.obj.d"
   "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.cpp" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/Tokenizer.cpp.obj" "gcc" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/Tokenizer.cpp.obj.d"
   "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/main.cpp" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/main.cpp.obj" "gcc" "CMakeFiles/CS315_PROJECT4_SPRING24.dir/main.cpp.obj.d"

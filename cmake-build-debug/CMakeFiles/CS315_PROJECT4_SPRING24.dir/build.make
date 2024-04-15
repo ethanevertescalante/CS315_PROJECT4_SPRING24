@@ -128,12 +128,60 @@ CMakeFiles/CS315_PROJECT4_SPRING24.dir/systemInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS315_PROJECT4_SPRING24.dir/systemInterface.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\systemInterface.cpp -o CMakeFiles\CS315_PROJECT4_SPRING24.dir\systemInterface.cpp.s
 
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/flags.make
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/includes_CXX.rsp
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/DepGraph.cpp
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj -MF CMakeFiles\CS315_PROJECT4_SPRING24.dir\DepGraph.cpp.obj.d -o CMakeFiles\CS315_PROJECT4_SPRING24.dir\DepGraph.cpp.obj -c C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\DepGraph.cpp
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\DepGraph.cpp > CMakeFiles\CS315_PROJECT4_SPRING24.dir\DepGraph.cpp.i
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\DepGraph.cpp -o CMakeFiles\CS315_PROJECT4_SPRING24.dir\DepGraph.cpp.s
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/flags.make
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/includes_CXX.rsp
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.cpp
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj -MF CMakeFiles\CS315_PROJECT4_SPRING24.dir\GraphNode.cpp.obj.d -o CMakeFiles\CS315_PROJECT4_SPRING24.dir\GraphNode.cpp.obj -c C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\GraphNode.cpp
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\GraphNode.cpp > CMakeFiles\CS315_PROJECT4_SPRING24.dir\GraphNode.cpp.i
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\GraphNode.cpp -o CMakeFiles\CS315_PROJECT4_SPRING24.dir\GraphNode.cpp.s
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/flags.make
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/includes_CXX.rsp
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.cpp
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj: CMakeFiles/CS315_PROJECT4_SPRING24.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj -MF CMakeFiles\CS315_PROJECT4_SPRING24.dir\MakeTree.cpp.obj.d -o CMakeFiles\CS315_PROJECT4_SPRING24.dir\MakeTree.cpp.obj -c C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\MakeTree.cpp
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\MakeTree.cpp > CMakeFiles\CS315_PROJECT4_SPRING24.dir\MakeTree.cpp.i
+
+CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\MakeTree.cpp -o CMakeFiles\CS315_PROJECT4_SPRING24.dir\MakeTree.cpp.s
+
 # Object files for target CS315_PROJECT4_SPRING24
 CS315_PROJECT4_SPRING24_OBJECTS = \
 "CMakeFiles/CS315_PROJECT4_SPRING24.dir/main.cpp.obj" \
 "CMakeFiles/CS315_PROJECT4_SPRING24.dir/Token.cpp.obj" \
 "CMakeFiles/CS315_PROJECT4_SPRING24.dir/Tokenizer.cpp.obj" \
-"CMakeFiles/CS315_PROJECT4_SPRING24.dir/systemInterface.cpp.obj"
+"CMakeFiles/CS315_PROJECT4_SPRING24.dir/systemInterface.cpp.obj" \
+"CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj" \
+"CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj" \
+"CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj"
 
 # External object files for target CS315_PROJECT4_SPRING24
 CS315_PROJECT4_SPRING24_EXTERNAL_OBJECTS =
@@ -142,11 +190,14 @@ CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/main.cpp.obj
 CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/Token.cpp.obj
 CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/Tokenizer.cpp.obj
 CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/systemInterface.cpp.obj
+CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj
+CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj
+CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj
 CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/build.make
 CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/linkLibs.rsp
 CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/objects1
 CS315_PROJECT4_SPRING24.exe: CMakeFiles/CS315_PROJECT4_SPRING24.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable CS315_PROJECT4_SPRING24.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable CS315_PROJECT4_SPRING24.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CS315_PROJECT4_SPRING24.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

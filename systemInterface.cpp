@@ -2,6 +2,7 @@
 #include <sys/stat.h>
 #include<cerrno>
 #include<cstdlib>
+#include<cassert>
 #include<iostream>
 
 

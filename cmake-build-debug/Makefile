@@ -128,6 +128,78 @@ CS315_PROJECT4_SPRING24/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/build
 .PHONY : CS315_PROJECT4_SPRING24/fast
 
+DepGraph.obj: DepGraph.cpp.obj
+.PHONY : DepGraph.obj
+
+# target to build an object file
+DepGraph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj
+.PHONY : DepGraph.cpp.obj
+
+DepGraph.i: DepGraph.cpp.i
+.PHONY : DepGraph.i
+
+# target to preprocess a source file
+DepGraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.i
+.PHONY : DepGraph.cpp.i
+
+DepGraph.s: DepGraph.cpp.s
+.PHONY : DepGraph.s
+
+# target to generate assembly for a file
+DepGraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.s
+.PHONY : DepGraph.cpp.s
+
+GraphNode.obj: GraphNode.cpp.obj
+.PHONY : GraphNode.obj
+
+# target to build an object file
+GraphNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj
+.PHONY : GraphNode.cpp.obj
+
+GraphNode.i: GraphNode.cpp.i
+.PHONY : GraphNode.i
+
+# target to preprocess a source file
+GraphNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.i
+.PHONY : GraphNode.cpp.i
+
+GraphNode.s: GraphNode.cpp.s
+.PHONY : GraphNode.s
+
+# target to generate assembly for a file
+GraphNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.s
+.PHONY : GraphNode.cpp.s
+
+MakeTree.obj: MakeTree.cpp.obj
+.PHONY : MakeTree.obj
+
+# target to build an object file
+MakeTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj
+.PHONY : MakeTree.cpp.obj
+
+MakeTree.i: MakeTree.cpp.i
+.PHONY : MakeTree.i
+
+# target to preprocess a source file
+MakeTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.i
+.PHONY : MakeTree.cpp.i
+
+MakeTree.s: MakeTree.cpp.s
+.PHONY : MakeTree.s
+
+# target to generate assembly for a file
+MakeTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.s
+.PHONY : MakeTree.cpp.s
+
 Token.obj: Token.cpp.obj
 .PHONY : Token.obj
 
@@ -233,6 +305,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CS315_PROJECT4_SPRING24
+	@echo ... DepGraph.obj
+	@echo ... DepGraph.i
+	@echo ... DepGraph.s
+	@echo ... GraphNode.obj
+	@echo ... GraphNode.i
+	@echo ... GraphNode.s
+	@echo ... MakeTree.obj
+	@echo ... MakeTree.i
+	@echo ... MakeTree.s
 	@echo ... Token.obj
 	@echo ... Token.i
 	@echo ... Token.s

@@ -9,7 +9,7 @@
 
 class Graph {
 public:
-    DepGraph( std::string name );
+    Graph( std::string name );
     void print();
     void parseDepGraph();
     void runMake();
