@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\CS315_PROJECT4_SPRING24.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\CS315_PROJECT4_SPRING24.dir/objects.a @CMakeFiles\CS315_PROJECT4_SPRING24.dir\objects1
+C:\MinGW\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\CS315_PROJECT4_SPRING24.dir/objects.a -Wl,--no-whole-archive -o CS315_PROJECT4_SPRING24.exe -Wl,--out-implib,libCS315_PROJECT4_SPRING24.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CS315_PROJECT4_SPRING24.dir\linkLibs.rsp
