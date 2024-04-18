@@ -16,16 +16,12 @@ int GraphNode::getTimestamp() { return _timestamp; }
 
 std::vector<GraphNode*>* GraphNode::dependentNodes() { return _listOfDependentNodes; }
 
-void GraphNode::setCommand(std::string cmnd) { _command = cmnd; }
+void GraphNode::setCommand(std::string command) { _command = command; }
 
 std::string GraphNode::getCommand() { return _command; }
 
 void GraphNode::runCommand() {
-    if (_isATarget) {
-        // Execute the command associated with this node
-        std::cout << "Running command for target: " << _name << std::endl;
-        // Execute command code goes here
-    }
+
 }
 
 void GraphNode::addDependentNode(GraphNode* child) { _listOfDependentNodes->push_back(child); }
@@ -49,8 +45,8 @@ void GraphNode::print() {
     std::cout << "Timestamp: " << _timestamp << std::endl;
     std::cout << "Command: " << _command << std::endl;
     std::cout << "Dependent Nodes: ";
-    for (auto node : *_listOfDependentNodes) {
-        std::cout << node->getName() << " ";
+    for (int index = 0; index < _listOfDependentNodes->size(); index++) {
+        std::cout << _listOfDependentNodes->at(index) << " ";
     }
     std::cout << std::endl;
 }

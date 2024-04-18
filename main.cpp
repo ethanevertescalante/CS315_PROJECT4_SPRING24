@@ -4,6 +4,7 @@
 #include<cstring>
 #include "Tokenizer.hpp"
 //#include "DepGraph.hpp"
+#include "GraphTokenizer.hpp"
 
 int main(int argc, const char *argv[] )
 {
@@ -37,11 +38,14 @@ int main(int argc, const char *argv[] )
 
     Tokenizer tokenizer(argv[1]);
     Token token = tokenizer.getToken();
+
     // get the first token to start the while loop
     while(!token.isEndOfFile()){
         token.print();
         token = tokenizer.getToken();
+
     }
+
 
     return 0;
 }

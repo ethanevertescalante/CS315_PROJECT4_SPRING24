@@ -10,4 +10,4 @@ add_executable(CS315_PROJECT4_SPRING24
         Token.cpp
         Token.hpp
         Tokenizer.cpp
-        Tokenizer.hpp DepGraph.hpp GraphNode.hpp MakeTree.hpp systemInterface.cpp systemInterface.hpp TreeNode.hpp DepGraph.cpp GraphNode.cpp MakeTree.cpp)
+        Tokenizer.hpp DepGraph.hpp GraphNode.hpp MakeTree.hpp systemInterface.cpp systemInterface.hpp TreeNode.hpp DepGraph.cpp GraphNode.cpp MakeTree.cpp TreeNode.cpp GraphTokenizer.cpp GraphTokenizer.hpp)

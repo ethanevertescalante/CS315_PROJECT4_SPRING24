@@ -176,6 +176,30 @@ GraphNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.s
 .PHONY : GraphNode.cpp.s
 
+GraphTokenizer.obj: GraphTokenizer.cpp.obj
+.PHONY : GraphTokenizer.obj
+
+# target to build an object file
+GraphTokenizer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphTokenizer.cpp.obj
+.PHONY : GraphTokenizer.cpp.obj
+
+GraphTokenizer.i: GraphTokenizer.cpp.i
+.PHONY : GraphTokenizer.i
+
+# target to preprocess a source file
+GraphTokenizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphTokenizer.cpp.i
+.PHONY : GraphTokenizer.cpp.i
+
+GraphTokenizer.s: GraphTokenizer.cpp.s
+.PHONY : GraphTokenizer.s
+
+# target to generate assembly for a file
+GraphTokenizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphTokenizer.cpp.s
+.PHONY : GraphTokenizer.cpp.s
+
 MakeTree.obj: MakeTree.cpp.obj
 .PHONY : MakeTree.obj
 
@@ -248,6 +272,30 @@ Tokenizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/Tokenizer.cpp.s
 .PHONY : Tokenizer.cpp.s
 
+TreeNode.obj: TreeNode.cpp.obj
+.PHONY : TreeNode.obj
+
+# target to build an object file
+TreeNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/TreeNode.cpp.obj
+.PHONY : TreeNode.cpp.obj
+
+TreeNode.i: TreeNode.cpp.i
+.PHONY : TreeNode.i
+
+# target to preprocess a source file
+TreeNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/TreeNode.cpp.i
+.PHONY : TreeNode.cpp.i
+
+TreeNode.s: TreeNode.cpp.s
+.PHONY : TreeNode.s
+
+# target to generate assembly for a file
+TreeNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/TreeNode.cpp.s
+.PHONY : TreeNode.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -311,6 +359,9 @@ help:
 	@echo ... GraphNode.obj
 	@echo ... GraphNode.i
 	@echo ... GraphNode.s
+	@echo ... GraphTokenizer.obj
+	@echo ... GraphTokenizer.i
+	@echo ... GraphTokenizer.s
 	@echo ... MakeTree.obj
 	@echo ... MakeTree.i
 	@echo ... MakeTree.s
@@ -320,6 +371,9 @@ help:
 	@echo ... Tokenizer.obj
 	@echo ... Tokenizer.i
 	@echo ... Tokenizer.s
+	@echo ... TreeNode.obj
+	@echo ... TreeNode.i
+	@echo ... TreeNode.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

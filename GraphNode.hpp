@@ -1,7 +1,8 @@
 #include<iostream>
 #include<string>
 #include<vector>
-
+#include"Tokenizer.hpp"
+#include"Token.hpp"
 class GraphNode {
 public:
     GraphNode( std::string name );
@@ -10,7 +11,7 @@ public:
     void setTimestamp(int ts);
     int getTimestamp();
     std::vector<GraphNode *> *dependentNodes();
-    void setCommand(std::string cmnd);
+    void setCommand(std::string command);
     std::string getCommand();
     void runCommand();  // execute the command associated with this node. Only for target nodes.
     void addDependentNode(GraphNode *child);

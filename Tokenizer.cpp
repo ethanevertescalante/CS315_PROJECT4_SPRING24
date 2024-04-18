@@ -24,7 +24,7 @@ Token Tokenizer::getToken() {
     if (inputStream.eof()) {
         token.isEndOfFile() = true;
         return token;
-    } else if (c == '\n') {
+    }else if (c == '\n') {
         token.isEndOfLine() = true;
         return token;
     } else if (c == ':') {
@@ -54,7 +54,7 @@ Token Tokenizer::getToken() {
         if (c == ':') {
             token.makeTarget(target);
             inputStream.putback(c);
-        }else if (c == ' ') {
+        }else {
             c = getNextChar();
             while (c != ' ' && c != '\n' && !inputStream.eof()) {
                 dependent += c;
@@ -63,8 +63,6 @@ Token Tokenizer::getToken() {
             token.makeDepenency(dependent);
             inputStream.putback(c);
 
-
-        } else if (c == '\n') {
 
         }
     }

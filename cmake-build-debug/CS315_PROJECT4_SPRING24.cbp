@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
+		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphTokenizer.cpp">
+			<Option target="CS315_PROJECT4_SPRING24"/>
+		</Unit>
+		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphTokenizer.hpp">
+			<Option target="CS315_PROJECT4_SPRING24"/>
+		</Unit>
 		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
@@ -110,6 +116,9 @@
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
 		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.hpp">
+			<Option target="CS315_PROJECT4_SPRING24"/>
+		</Unit>
+		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
 		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp">
