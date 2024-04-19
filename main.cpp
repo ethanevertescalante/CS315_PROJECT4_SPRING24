@@ -4,7 +4,8 @@
 #include<cstring>
 #include "Tokenizer.hpp"
 //#include "DepGraph.hpp"
-#include "GraphTokenizer.hpp"
+#include "GraphNode.hpp"
+
 
 int main(int argc, const char *argv[] )
 {
@@ -36,13 +37,35 @@ int main(int argc, const char *argv[] )
 
     inputStream.close();
 
-    Tokenizer tokenizer(argv[1]);
-    Token token = tokenizer.getToken();
 
+    bool isPreviousTokenTab; //flag for knowing if previous token was a tag
+    Tokenizer tokenizer(argv[1]);
+    Token token = tokenizer.getToken(isPreviousTokenTab);
+
+
+    GraphNode graphNode("");
+    graphNode = graphNode.readTokens(token);
+    graphNode.print();
     // get the first token to start the while loop
     while(!token.isEndOfFile()){
-        token.print();
-        token = tokenizer.getToken();
+        //token.print();
+
+        //ask if token was a tag before getting the next token
+        if(token.isTab()){
+            isPreviousTokenTab = true;
+        }else{
+            isPreviousTokenTab = false;
+        }
+        //get next token
+        token = tokenizer.getToken(isPreviousTokenTab);
+
+        if(token.isTarget() || token.isDependency()) {
+            //read the next token
+            graphNode.readTokens(token);
+            graphNode.print();
+        }
+
+
 
     }
 

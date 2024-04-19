@@ -6,107 +6,73 @@
 #include "Tokenizer.hpp"
 #include <iostream>
 
-Tokenizer::Tokenizer(std::string name):  timestamp{1},
+Tokenizer::Tokenizer(std::string name):  _fileName{""},
                                          inputFileName{name} {
-        inputStream.open(inputFileName, std::ios::in);
+    inputStream.open(inputFileName, std::ios::in);
 }
+
 char Tokenizer::getNextChar() {
     char c;
     inputStream.get(c);
     return c;
 }
 
-Token Tokenizer::getToken() {
 
-    Token token(timestamp);
+
+Token Tokenizer::getToken(bool isTab) {
+
+
+    _fileName = "";
+    Token token(_fileName);
 
     char c = getNextChar();
+
+
+    while(c == ' '){
+        c = getNextChar();
+    }
+
     if (inputStream.eof()) {
         token.isEndOfFile() = true;
-        return token;
-    }else if (c == '\n') {
+
+    } else if (c == '\n') {
         token.isEndOfLine() = true;
-        return token;
     } else if (c == ':') {
         token.isColon() = true;
-        return token;
     } else if (c == '\t') {
-        std::string command;
-        while ( c != '\n' && !inputStream.eof()) {
-            command += c;
+        token.isTab() = true;
+    } else if(isTab){
+        while(c != '\n' && !inputStream.eof()){
+            _fileName += c;
             c = getNextChar();
         }
-        token.makeCommand(command);
-    }else {
-        std::string target;
+        token.makeCommand(_fileName);
 
-        std::string dependent;
-
-        // Handle non-whitespace characters
-        while (c != ':' && c != '\n' && c != '\t' && c != ' ' && !inputStream.eof()) {
-
-            target += c; // Collect characters for target
-
+    }else{
+        while(c != ':' && c != ' ' && c != '\n' ){
+            _fileName+=c;
             c = getNextChar();
         }
 
-        //handle target
-        if (c == ':') {
-            token.makeTarget(target);
+        char peek = inputStream.peek();
+
+        if(c == ':'){
+            token.makeTarget(_fileName);
             inputStream.putback(c);
-        }else {
-            c = getNextChar();
-            while (c != ' ' && c != '\n' && !inputStream.eof()) {
-                dependent += c;
-                c = getNextChar();
+        }else if (c == ' ' || c == '\n'){
+
+            if(c == '\n' && peek == '\t'){
+                token.makeDepenency(_fileName);
+                inputStream.putback(c);
+            }else{
+                token.makeDepenency(_fileName);
             }
-            token.makeDepenency(dependent);
-            inputStream.putback(c);
-
 
         }
+
     }
+
     return token;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

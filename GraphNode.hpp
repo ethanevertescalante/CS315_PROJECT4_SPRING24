@@ -23,6 +23,7 @@ public:
     void isATarget(bool v);
     int numDependentNodes();
     void print();
+    GraphNode readTokens(Token token);
 
 private:
     std::string _name, _command;

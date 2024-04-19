@@ -14,11 +14,12 @@ class Tokenizer {
 
 public:
     Tokenizer(std::string name);
-    Token getToken();
+    Token getToken(bool isTab);
     char getNextChar();
 
+
 private:
-    int timestamp;
+    std::string _fileName;
     std::string inputFileName;
     std::ifstream inputStream;
 };

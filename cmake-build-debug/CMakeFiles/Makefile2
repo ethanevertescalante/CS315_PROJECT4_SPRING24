@@ -80,12 +80,12 @@ clean: CMakeFiles/CS315_PROJECT4_SPRING24.dir/clean
 CMakeFiles/CS315_PROJECT4_SPRING24.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS315_PROJECT4_SPRING24.dir\build.make CMakeFiles/CS315_PROJECT4_SPRING24.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target CS315_PROJECT4_SPRING24"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target CS315_PROJECT4_SPRING24"
 .PHONY : CMakeFiles/CS315_PROJECT4_SPRING24.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CS315_PROJECT4_SPRING24.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CS315_PROJECT4_SPRING24.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/CS315_PROJECT4_SPRING24.dir/rule
