@@ -6,6 +6,7 @@
 //#include "DepGraph.hpp"
 #include "GraphNode.hpp"
 #include "systemInterface.hpp"
+#include "MakeTree.hpp"
 
 
 int main(int argc, const char *argv[] )
@@ -45,10 +46,13 @@ int main(int argc, const char *argv[] )
 
     GraphNode* currentTarget = nullptr;
 
+    TreeNode treeNode = nullptr;
+    MakeTree makeTree;
 
     //flags to print either tokens or graph nodes
     bool printToken = false;
-    bool printGraphNode = true;
+    bool printGraphNode = false;
+    bool printBST = true;
 
 
     // get the first token to start the while loop
@@ -66,8 +70,10 @@ int main(int argc, const char *argv[] )
 
 
 
+        //graph node logic
         if (token.isTarget()) {
             currentTarget = new GraphNode(token.nameOfFile());
+            currentTarget->isATarget(true);
             //currentTarget->setTimestamp(timestampForFile(currentTarget->getName()));
         } else if (token.isDependency()) {
             GraphNode* dependencyNode = nullptr;
@@ -75,18 +81,26 @@ int main(int argc, const char *argv[] )
             //dependencyNode->setTimestamp(timestampForFile(dependencyNode->getName()));
             currentTarget->addDependentNode(dependencyNode);
 
-            if(printGraphNode) {
+            if(printGraphNode){
                 dependencyNode->print();
             }
 
-
+            makeTree.insert(dependencyNode);
 
         }else if(token.isCommand()){
             currentTarget->setCommand(token.nameOfFile());
             if(printGraphNode) {
                 currentTarget->print();
             }
+
+            makeTree.insert(currentTarget);
+
+
         }
+
+
+
+
 
 
 
@@ -95,7 +109,10 @@ int main(int argc, const char *argv[] )
 
     }
 
-
+    //TODO::check and see if this is right
+    if(printBST){
+        makeTree.print();
+    }
 
 
 

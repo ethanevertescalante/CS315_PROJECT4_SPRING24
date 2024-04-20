@@ -2,7 +2,7 @@
 // Created by Ethan on 4/14/2024.
 //
 #include "GraphNode.hpp"
-#include "Tokenizer.hpp"
+#include "systemInterface.hpp"
 
 GraphNode::GraphNode(std::string name) : _name(name), _timestamp(0), _listOfDependentNodes(new std::vector<GraphNode*>),
                                          _onPath(false), _wasMade(false), _isATarget(false) {}
@@ -22,7 +22,7 @@ void GraphNode::setCommand(std::string command) { _command = command; }
 std::string GraphNode::getCommand() { return _command; }
 
 void GraphNode::runCommand() {
-
+    executeCommand(getCommand());
 }
 
 void GraphNode::addDependentNode(GraphNode* child) { _listOfDependentNodes->push_back(child); }
@@ -42,19 +42,29 @@ void GraphNode::isATarget(bool v) { _isATarget = v; }
 int GraphNode::numDependentNodes() { return _listOfDependentNodes->size(); }
 
 void GraphNode::print() {
+    if(isATarget()){
+        std::cout << "Target Info: \n";
+    }else{
+     std::cout << "Dependent Info: \n";
+    }
 
-        std::cout << "Node Name: " << getName() << std::endl;
-        std::cout << "Timestamp: " << getTimestamp() << std::endl;
+    std::cout << "Node Name: " << getName() << std::endl;
+    std::cout << "Timestamp: " << getTimestamp() << std::endl;
+
+    if(isATarget()) {
         std::cout << "Command: " << getCommand() << std::endl;
         std::cout << "Dependent Nodes: ";
-        std::cout << dependentNodes();
         for (int index = 0; index < numDependentNodes(); index++) {
-            std::cout << _listOfDependentNodes->at(index) << " ";
+            std::cout << _listOfDependentNodes->at(index)->getName() << " ";
         }
-        std::cout << std::endl << std::endl;
+    }
+    std::cout << std::endl << std::endl;
 
 
 
 }
+
+
+
 
 

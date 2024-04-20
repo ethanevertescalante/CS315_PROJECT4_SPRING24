@@ -1,3 +1,4 @@
+
 make.x: main.o Reader.o Graph.o
 	g++ -std=c++17 Graph.o main.o Reader.o -o make.x
 

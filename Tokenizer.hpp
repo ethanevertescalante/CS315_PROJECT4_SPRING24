@@ -10,12 +10,15 @@
 #include <fstream>
 #include "Token.hpp"
 
+
 class Tokenizer {
 
 public:
     Tokenizer(std::string name);
     Token getToken(bool isTab);
     char getNextChar();
+
+
 
 
 private:

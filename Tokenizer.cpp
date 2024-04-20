@@ -36,7 +36,7 @@ Token Tokenizer::getToken(bool isTab) {
     if (inputStream.eof()) {
         token.isEndOfFile() = true;
 
-    } else if (c == '\n' && peek1 == '\t') {
+    } else if (c == '\n' && peek1 == '\t') { //only getting endl after tab
         token.isEndOfLine() = true;
     } else if (c == ':') {
         token.isColon() = true;
@@ -50,12 +50,11 @@ Token Tokenizer::getToken(bool isTab) {
         token.makeCommand(_fileName);
 
     }else{
-        //if endl is at the top of the file
-        if(c == '\n'){
-            while(c == '\n') {
-                c = getNextChar();
-            }
+        //if endl and/or space is at the top of the file
+        while(c == '\n' || c == ' ') {
+            c = getNextChar();
         }
+
             //getting file name
             while (c != ':' && c != ' ' && c != '\n') {
                 _fileName += c;
@@ -87,3 +86,4 @@ Token Tokenizer::getToken(bool isTab) {
 
 
 }
+

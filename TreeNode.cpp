@@ -3,6 +3,7 @@
 //
 // Constructor
 #include "TreeNode.hpp"
+#include "GraphNode.hpp"
 TreeNode::TreeNode(GraphNode *nNode) : makeNode(nNode), leftSubtree(nullptr), rightSubtree(nullptr) {}
 
 // Getter for left subtree
@@ -28,7 +29,7 @@ void TreeNode::right(TreeNode *rightPtr) {
 // Print the value of this node
 void TreeNode::print() {
     if (makeNode != nullptr) {
-        std::cout << makeNode << std::endl;
+        std::cout << makeNode->getName() << std::endl;
     }
     else {
         std::cout << "NULL" << std::endl;
