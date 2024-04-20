@@ -26,16 +26,17 @@ Token Tokenizer::getToken(bool isTab) {
     Token token(_fileName);
 
     char c = getNextChar();
-
+    char peek1 = inputStream.peek();
 
     while(c == ' '){
         c = getNextChar();
     }
 
+
     if (inputStream.eof()) {
         token.isEndOfFile() = true;
 
-    } else if (c == '\n') {
+    } else if (c == '\n' && peek1 == '\t') {
         token.isEndOfLine() = true;
     } else if (c == ':') {
         token.isColon() = true;
@@ -49,26 +50,36 @@ Token Tokenizer::getToken(bool isTab) {
         token.makeCommand(_fileName);
 
     }else{
-        while(c != ':' && c != ' ' && c != '\n' ){
-            _fileName+=c;
-            c = getNextChar();
+        //if endl is at the top of the file
+        if(c == '\n'){
+            while(c == '\n') {
+                c = getNextChar();
+            }
         }
-
-        char peek = inputStream.peek();
-
-        if(c == ':'){
-            token.makeTarget(_fileName);
-            inputStream.putback(c);
-        }else if (c == ' ' || c == '\n'){
-
-            if(c == '\n' && peek == '\t'){
-                token.makeDepenency(_fileName);
-                inputStream.putback(c);
-            }else{
-                token.makeDepenency(_fileName);
+            //getting file name
+            while (c != ':' && c != ' ' && c != '\n') {
+                _fileName += c;
+                c = getNextChar();
             }
 
-        }
+            char peek = inputStream.peek();
+
+
+            //target, dependency and command logic
+            if (c == ':') {
+                token.makeTarget(_fileName);
+                inputStream.putback(c);
+            } else if (c == ' ' || c == '\n') {
+
+                if (c == '\n' && peek == '\t') {
+                    token.makeDepenency(_fileName);
+                    inputStream.putback(c);
+                } else {
+                    token.makeDepenency(_fileName);
+                }
+
+            }
+
 
     }
 

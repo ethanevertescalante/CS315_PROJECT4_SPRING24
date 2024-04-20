@@ -5,6 +5,7 @@
 #include "Tokenizer.hpp"
 //#include "DepGraph.hpp"
 #include "GraphNode.hpp"
+#include "systemInterface.hpp"
 
 
 int main(int argc, const char *argv[] )
@@ -42,13 +43,19 @@ int main(int argc, const char *argv[] )
     Tokenizer tokenizer(argv[1]);
     Token token = tokenizer.getToken(isPreviousTokenTab);
 
+    GraphNode* currentTarget = nullptr;
 
-    GraphNode graphNode("");
-    graphNode = graphNode.readTokens(token);
-    graphNode.print();
+
+    //flags to print either tokens or graph nodes
+    bool printToken = false;
+    bool printGraphNode = true;
+
+
     // get the first token to start the while loop
     while(!token.isEndOfFile()){
-        //token.print();
+        if(printToken) {
+            token.print();
+        }
 
         //ask if token was a tag before getting the next token
         if(token.isTab()){
@@ -56,18 +63,40 @@ int main(int argc, const char *argv[] )
         }else{
             isPreviousTokenTab = false;
         }
-        //get next token
-        token = tokenizer.getToken(isPreviousTokenTab);
 
-        if(token.isTarget() || token.isDependency()) {
-            //read the next token
-            graphNode.readTokens(token);
-            graphNode.print();
+
+
+        if (token.isTarget()) {
+            currentTarget = new GraphNode(token.nameOfFile());
+            //currentTarget->setTimestamp(timestampForFile(currentTarget->getName()));
+        } else if (token.isDependency()) {
+            GraphNode* dependencyNode = nullptr;
+            dependencyNode = new GraphNode(token.nameOfFile());
+            //dependencyNode->setTimestamp(timestampForFile(dependencyNode->getName()));
+            currentTarget->addDependentNode(dependencyNode);
+
+            if(printGraphNode) {
+                dependencyNode->print();
+            }
+
+
+
+        }else if(token.isCommand()){
+            currentTarget->setCommand(token.nameOfFile());
+            if(printGraphNode) {
+                currentTarget->print();
+            }
         }
 
 
 
+        //get next token
+        token = tokenizer.getToken(isPreviousTokenTab);
+
     }
+
+
+
 
 
     return 0;

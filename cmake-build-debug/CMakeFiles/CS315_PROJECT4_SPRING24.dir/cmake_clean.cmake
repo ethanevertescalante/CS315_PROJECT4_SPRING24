@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj.d"
   "CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj"
   "CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj.d"
-  "CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphTokenizer.cpp.obj"
-  "CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphTokenizer.cpp.obj.d"
   "CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj"
   "CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj.d"
   "CMakeFiles/CS315_PROJECT4_SPRING24.dir/Token.cpp.obj"

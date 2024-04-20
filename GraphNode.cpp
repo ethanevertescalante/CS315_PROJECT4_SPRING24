@@ -42,62 +42,19 @@ void GraphNode::isATarget(bool v) { _isATarget = v; }
 int GraphNode::numDependentNodes() { return _listOfDependentNodes->size(); }
 
 void GraphNode::print() {
-    if(isATarget()) {
+
         std::cout << "Node Name: " << getName() << std::endl;
-        std::cout << "Timestamp: " << _timestamp << std::endl;
-        std::cout << "Command: " << _command << std::endl;
+        std::cout << "Timestamp: " << getTimestamp() << std::endl;
+        std::cout << "Command: " << getCommand() << std::endl;
         std::cout << "Dependent Nodes: ";
-        for (int index = 0; index < _listOfDependentNodes->size(); index++) {
+        std::cout << dependentNodes();
+        for (int index = 0; index < numDependentNodes(); index++) {
             std::cout << _listOfDependentNodes->at(index) << " ";
         }
         std::cout << std::endl << std::endl;
-    }else{
-        std::cout << "Node Name: " << _name << std::endl;
-        std::cout << "Timestamp: " << _timestamp << std::endl;
-    }
 
 
 
 }
 
 
-GraphNode GraphNode::readTokens(Token token) {
-
-    std::string name = "";
-    GraphNode graphNode(name);
-    Token temp = token;
-    Tokenizer tokenizerCopy(_argv[1]);
-    bool prevToken;
-
-    if(token.isTarget())
-    {
-      graphNode.setName(temp.nameOfFile());
-      while(!temp.isCommand()){
-          if(token.isTab()){
-              prevToken = true;
-          }else{
-              prevToken = false;
-          }
-          //get next token
-          temp = tokenizerCopy.getToken(prevToken);
-
-          if(token.isDependency()){
-              graphNode.addDependentNode()
-          }
-
-      }
-
-    }else if(token.isDependency()){
-        std::cout << "Dependency\n";
-        graphNode.isATarget(false);
-        setName(token.nameOfFile());
-    }else if(token.isCommand()){
-        std::cout << "Command\n";
-        graphNode.isATarget(false);
-        setName(token.nameOfFile());
-    }
-
-
-    return graphNode;
-
-}
