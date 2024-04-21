@@ -117,7 +117,21 @@ CMakeFiles/CS315_PROJECT4_SPRING24.dir/DepGraph.cpp.obj: C:/Users/Ethan/CLionPro
   C:/MinGW/include/strings.h \
   C:/MinGW/include/wchar.h \
   C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.hpp \
-  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/vector \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_vector.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.hpp \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/codecvt.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp
 
 CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.cpp \
   C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp \
@@ -1221,8 +1235,6 @@ C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.hpp:
 
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp:
 
-C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.cpp:
-
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/vector:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_vector.h:
@@ -1236,6 +1248,8 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc:
 
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp:
+
+C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.cpp:
 
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp:
 

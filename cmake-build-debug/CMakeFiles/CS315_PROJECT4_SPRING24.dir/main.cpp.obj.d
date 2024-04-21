@@ -116,7 +116,8 @@ CMakeFiles/CS315_PROJECT4_SPRING24.dir/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\GraphNode.hpp \
- C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\systemInterface.hpp \
+ C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\DepGraph.hpp \
  C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\MakeTree.hpp \
- C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\TreeNode.hpp
+ C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\TreeNode.hpp \
+ C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\GraphNode.hpp \
+ C:\Users\Ethan\CLionProjects\CS315_PROJECT4_SPRING24\systemInterface.hpp

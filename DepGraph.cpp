@@ -25,24 +25,6 @@ bool Graph::isCyclic() {
 
 bool Graph::isCyclic(GraphNode* node) {
 
-    if(node){
-        return false;
-    }
-
-    if(node->onPath()){
-        return true;
-    }
-
-    node->onPath(true);
-
-
-
-
-
-
-    node->onPath(false);
-    return false;
-
 
 
 
