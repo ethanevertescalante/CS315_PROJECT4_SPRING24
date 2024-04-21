@@ -242,7 +242,8 @@ CMakeFiles/CS315_PROJECT4_SPRING24.dir/GraphNode.cpp.obj: C:/Users/Ethan/CLionPr
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc \
-  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp
 
 CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.cpp \
   C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.hpp \
@@ -355,7 +356,21 @@ CMakeFiles/CS315_PROJECT4_SPRING24.dir/MakeTree.cpp.obj: C:/Users/Ethan/CLionPro
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/istream \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc \
-  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/vector \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_vector.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.hpp \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/codecvt.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp
 
 CMakeFiles/CS315_PROJECT4_SPRING24.dir/Token.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.cpp \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream \
@@ -709,7 +724,21 @@ CMakeFiles/CS315_PROJECT4_SPRING24.dir/TreeNode.cpp.obj: C:/Users/Ethan/CLionPro
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/istream \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/vector \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_vector.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.hpp \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/codecvt.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp
 
 CMakeFiles/CS315_PROJECT4_SPRING24.dir/main.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/main.cpp \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream \
@@ -839,7 +868,9 @@ CMakeFiles/CS315_PROJECT4_SPRING24.dir/main.cpp.obj: C:/Users/Ethan/CLionProject
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
   C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp \
-  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.hpp \
+  C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp
 
 CMakeFiles/CS315_PROJECT4_SPRING24.dir/systemInterface.cpp.obj: C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.cpp \
   C:/MinGW/include/sys/types.h \
@@ -1206,6 +1237,8 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc:
 
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp:
 
+C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp:
+
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.cpp:
 
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.cpp:
@@ -1215,8 +1248,6 @@ C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.cpp:
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.cpp:
 
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/main.cpp:
-
-C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp:
 
 C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.cpp:
 

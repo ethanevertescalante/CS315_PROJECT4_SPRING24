@@ -3,7 +3,7 @@
 #include<fstream>
 #include<cstring>
 #include "Tokenizer.hpp"
-//#include "DepGraph.hpp"
+#include "DepGraph.hpp"
 #include "GraphNode.hpp"
 #include "systemInterface.hpp"
 #include "MakeTree.hpp"
@@ -46,7 +46,7 @@ int main(int argc, const char *argv[] )
 
     GraphNode* currentTarget = nullptr;
 
-    TreeNode treeNode = nullptr;
+
     MakeTree makeTree;
 
     //flags to print either tokens or graph nodes
@@ -75,6 +75,7 @@ int main(int argc, const char *argv[] )
             currentTarget = new GraphNode(token.nameOfFile());
             currentTarget->isATarget(true);
             //currentTarget->setTimestamp(timestampForFile(currentTarget->getName()));
+            makeTree.insert(currentTarget);
         } else if (token.isDependency()) {
             GraphNode* dependencyNode = nullptr;
             dependencyNode = new GraphNode(token.nameOfFile());
@@ -93,7 +94,7 @@ int main(int argc, const char *argv[] )
                 currentTarget->print();
             }
 
-            makeTree.insert(currentTarget);
+
 
 
         }
@@ -109,7 +110,7 @@ int main(int argc, const char *argv[] )
 
     }
 
-    //TODO::check and see if this is right
+
     if(printBST){
         makeTree.print();
     }

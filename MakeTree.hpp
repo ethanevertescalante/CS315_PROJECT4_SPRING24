@@ -7,6 +7,7 @@
 
 #include "TreeNode.hpp"
 
+
 class MakeTree {
 public:
     MakeTree();
@@ -17,6 +18,7 @@ public:
 
 private:
     TreeNode *insert(TreeNode *tNode, GraphNode *nNode);
+    GraphNode* find(TreeNode* tNode, std::string toFind); //helper function
     void print(TreeNode *root);
     
     TreeNode *_root;
