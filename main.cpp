@@ -16,17 +16,6 @@ int main(int argc, const char *argv[] )
         exit(1);
     }
 
-    /*
-    // creates a Reader and build the dependency graph using the tokens that it returns.
-    DepGraph *make = new DepGraph(argv[1]);
-    make->parseDepGraph();
-    if( make->isCyclic() )  {
-        std::cerr << "Input graph has cycles.\n";
-        exit(1);
-    }
-    make->runMake();
-
-     */
 
     std::ifstream inputStream;
     inputStream.open(argv[1], std::ios::in);    // open for reading
@@ -39,15 +28,27 @@ int main(int argc, const char *argv[] )
 
     inputStream.close();
 
+    // creates a Reader and build the dependency graph using the tokens that it returns.
+    Graph* make = new Graph(argv[1]);
+    make->parseDepGraph();
+    /*
+    if( make->isCyclic() )  {
+        std::cerr << "Input graph has cycles.\n";
+        exit(1);
+    }
+    make->runMake();
+    */
 
+/*
     bool isPreviousTokenTab; //flag for knowing if previous token was a tag
     Tokenizer tokenizer(argv[1]);
     Token token = tokenizer.getToken(isPreviousTokenTab);
 
     GraphNode* currentTarget = nullptr;
 
-
     MakeTree makeTree;
+
+    Graph *make = new Graph(argv[1]);
 
     //flags to print either tokens or graph nodes
     bool printToken = false;
@@ -94,16 +95,7 @@ int main(int argc, const char *argv[] )
                 currentTarget->print();
             }
 
-
-
-
         }
-
-
-
-
-
-
 
         //get next token
         token = tokenizer.getToken(isPreviousTokenTab);
@@ -115,6 +107,7 @@ int main(int argc, const char *argv[] )
         makeTree.print();
     }
 
+*/
 
 
     return 0;

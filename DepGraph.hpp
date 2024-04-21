@@ -8,6 +8,7 @@
 #include "MakeTree.hpp"
 
 
+
 class Graph {
 public:
     Graph( std::string name );
@@ -18,6 +19,7 @@ public:
 
 private:
     bool isCyclic(GraphNode *);
+    long updateTimeStamp(GraphNode *);
 
 private:
     std::string _fileToMake, _targetToMake;

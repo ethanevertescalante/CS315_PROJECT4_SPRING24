@@ -8,126 +8,122 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
+				<Option working_dir="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CS315_PROJECT4_SPRING24">
-				<Option output="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/CS315_PROJECT4_SPRING24.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
+				<Option output="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/CS315_PROJECT4_SPRING24" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/."/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS315_PROJECT4_SPRING24"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS315_PROJECT4_SPRING24"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CS315_PROJECT4_SPRING24/fast">
-				<Option output="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/CS315_PROJECT4_SPRING24.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
+				<Option output="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/CS315_PROJECT4_SPRING24" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/."/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS315_PROJECT4_SPRING24/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS315_PROJECT4_SPRING24/fast"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
+				<Option working_dir="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
+				<Option working_dir="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/DepGraph.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/DepGraph.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/DepGraph.hpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/DepGraph.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/GraphNode.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.hpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/MakeTree.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/Token.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/Token.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.hpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/Tokenizer.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/TreeNode.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/main.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/main.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.cpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.cpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/systemInterface.hpp">
 			<Option target="CS315_PROJECT4_SPRING24"/>
 		</Unit>
-		<Unit filename="C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/CMakeLists.txt">
+		<Unit filename="/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
