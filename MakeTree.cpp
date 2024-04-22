@@ -14,6 +14,14 @@ TreeNode* MakeTree::insert(TreeNode* tNode, GraphNode* nNode) {
 
     //Duplicate Checker
     if(find(nNode->getName()) != nullptr) {
+
+        //if there is a target with the same name as something already in the binary tree
+        //then swap the graphNodes, mostly for easier traversal in the DepGraph
+        //Both the target and the dependent will have the same timestamp
+        if(nNode->isATarget()){
+            find(nNode->getName())->graphNode(nNode);
+        }
+
         return tNode;
 
     }else if (tNode->graphNode()->getName() < nNode->getName()) {
@@ -27,42 +35,47 @@ TreeNode* MakeTree::insert(TreeNode* tNode, GraphNode* nNode) {
 
 }
 
-GraphNode* MakeTree::find(std::string name) {
+TreeNode* MakeTree::find(std::string name) {
     return find(_root, name);
 
 }
 
-GraphNode *MakeTree::find(TreeNode *tNode, std::string toFind) {
+TreeNode *MakeTree::find(TreeNode *tNode, std::string toFind) {
 
-    if(tNode == nullptr){
+    if(tNode == nullptr) {
         return nullptr;
-    }else if(tNode->graphNode()->getName() == toFind){
-        return tNode->graphNode();
+    }if(tNode->graphNode()->getName() == toFind){
+        return tNode;
     }else if(tNode->graphNode()->getName() < toFind){
         return find(tNode->right(), toFind);
     }else if(tNode->graphNode()->getName() > toFind) {
         return find(tNode->left(), toFind);
     }
 
-
-
-
+    return tNode;
 }
 
 
-void MakeTree::print(TreeNode* root) {
+void MakeTree::printTraverse(TreeNode* root) {
     //order traversal
     bool preOrder = true;
     bool inOrder = false;
     bool postOrder = false;
+    bool print = false;
 
 
     if(preOrder) {
 
         if (root != nullptr) {
+            if(print) {
             root->print();
-            print(root->left());
-            print(root->right());
+
+                std::cout << "Target: " << root->graphNode()->isATarget() << " ";
+                std::cout << "DepNodes: " << root->graphNode()->numDependentNodes();
+                std::cout << std::endl;
+            }
+            printTraverse(root->left());
+            printTraverse(root->right());
         }
     }
 
@@ -70,9 +83,14 @@ void MakeTree::print(TreeNode* root) {
 
         if (root != nullptr) {
 
-            print(root->left());
+            printTraverse(root->left());
             root->print();
-            print(root->right());
+            if(print) {
+                std::cout << "Target: " << root->graphNode()->isATarget() << " ";
+                std::cout << "DepNodes: " << root->graphNode()->numDependentNodes();
+                std::cout << std::endl;
+            }
+            printTraverse(root->right());
         }
     }
 
@@ -80,9 +98,14 @@ void MakeTree::print(TreeNode* root) {
 
         if (root != nullptr) {
 
-            print(root->left());
-            print(root->right());
+            printTraverse(root->left());
+            printTraverse(root->right());
             root->print();
+            if(print) {
+                std::cout << "Target: " << root->graphNode()->isATarget() << " ";
+                std::cout << "DepNodes: " << root->graphNode()->numDependentNodes();
+                std::cout << std::endl;
+            }
         }
     }
 

@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.25.2"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CS315_PROJECT4_SPRING24::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CS315_PROJECT4_SPRING24-Debug-70ba829f17bbb12b5145.json",
+					"jsonFile" : "target-CS315_PROJECT4_SPRING24-Debug-0aeaedf1b14319f3559c.json",
 					"name" : "CS315_PROJECT4_SPRING24",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug",
-		"source" : "/Users/ethanescalante/CLionProjects/CS315_PROJECT4_SPRING24"
+		"build" : "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24/cmake-build-debug",
+		"source" : "C:/Users/Ethan/CLionProjects/CS315_PROJECT4_SPRING24"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 4
 	}
 }

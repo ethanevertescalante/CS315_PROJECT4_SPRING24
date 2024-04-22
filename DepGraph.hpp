@@ -18,8 +18,9 @@ public:
     bool isCyclic();
 
 private:
-    bool isCyclic(GraphNode *);
-    long updateTimeStamp(GraphNode *);
+    bool isCyclic(MakeTree makeTree,TreeNode * treeNode);
+    long updateTimeStamp(MakeTree makeTree ,TreeNode * treeNode);
+    void traverseGraph(MakeTree makeTree, TreeNode* node);
 
 private:
     std::string _fileToMake, _targetToMake;

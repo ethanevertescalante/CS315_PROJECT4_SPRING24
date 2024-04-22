@@ -30,14 +30,10 @@ int main(int argc, const char *argv[] )
 
     // creates a Reader and build the dependency graph using the tokens that it returns.
     Graph* make = new Graph(argv[1]);
-    make->parseDepGraph();
-    /*
-    if( make->isCyclic() )  {
-        std::cerr << "Input graph has cycles.\n";
-        exit(1);
-    }
-    make->runMake();
+/*
+
     */
+    make->parseDepGraph();
 
 /*
     bool isPreviousTokenTab; //flag for knowing if previous token was a tag

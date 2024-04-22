@@ -3,6 +3,7 @@
 //
 #include "DepGraph.hpp"
 #include "GraphNode.hpp"
+#include "systemInterface.hpp"
 #include <algorithm>
 Graph::Graph(std::string name) : _fileToMake(name), _targetToMake(""), firstTarget(nullptr), _tree(nullptr) {}
 
@@ -22,12 +23,12 @@ void Graph::parseDepGraph() {
 
     MakeTree makeTree;
 
-    Graph* graph = nullptr;
+
 
     //flags to print either tokens or graph nodes
     bool printToken = false;
-    bool printGraphNode = true;
-    bool printBST = false;
+    bool printGraphNode = false;
+    bool printBST = true;
 
 
     // get the first token to start the while loop
@@ -49,13 +50,13 @@ void Graph::parseDepGraph() {
         if (token.isTarget()) {
             currentTarget = new GraphNode(token.nameOfFile());
             currentTarget->isATarget(true);
-            //currentTarget->setTimestamp(timestampForFile(currentTarget->getName()));
+           // currentTarget->setTimestamp(timestampForFile(currentTarget->getName()));
             makeTree.insert(currentTarget);
 
         } else if (token.isDependency()) {
             GraphNode* dependencyNode = nullptr;
             dependencyNode = new GraphNode(token.nameOfFile());
-            //dependencyNode->setTimestamp(timestampForFile(dependencyNode->getName()));
+           // dependencyNode->setTimestamp(timestampForFile(dependencyNode->getName()));
             currentTarget->addDependentNode(dependencyNode);
 
             if(printGraphNode){
@@ -80,7 +81,15 @@ void Graph::parseDepGraph() {
         makeTree.print();
     }
 
+    //Graph Traversal
+    if(isCyclic(makeTree,makeTree.getRoot()))
+    {
 
+        std::cerr << "Input graph has cycles.\n";
+        exit(1);
+
+    }
+    traverseGraph(makeTree, makeTree.getRoot());
 
 
 }
@@ -92,58 +101,96 @@ void Graph::runMake() {
 
 
 
+
 }
 
-bool Graph::isCyclic() {
-    return isCyclic(firstTarget);
-}
 
-bool Graph::isCyclic(GraphNode* node) {
+bool Graph::isCyclic(MakeTree makeTree ,TreeNode* node) {
     //taken from Graph Algorithms Page on CS355 Canvas
-    if(node->numDependentNodes() == 0){
+    if(node->graphNode()->numDependentNodes() == 0){
         return false;
     }
 
-    if(node->onPath()){
+    if(node->graphNode()->onPath()){
         return true;
     }
 
-    node->onPath(true);
+    node->graphNode()->onPath(true);
 
-    for(int dependent = 0; dependent < node->numDependentNodes(); dependent++){
-        if(isCyclic(node->dependentNodes()->at(dependent))){
+    for(int dependent = 0; dependent < node->graphNode()->numDependentNodes(); dependent++){
+        if(isCyclic(makeTree, makeTree.find(node->graphNode()->dependentNodes()->at(dependent)->getName()))){
             return true;
         }
     }
 
-    node->onPath(false);
+    node->graphNode()->onPath(false);
     return false;
 
 
 }
 
-long Graph::updateTimeStamp(GraphNode * node) {
-
-    if(node->wasMade()){
-        return node->getTimestamp();
+//TODO::Something with updatedTimeStamp is wrong, find out what it is
+long Graph::updateTimeStamp(MakeTree makeTree,TreeNode * node) {
+    //taken from Graph Algorithms Page on CS355 Canvas
+    if(node->graphNode()->wasMade()){
+        return node->graphNode()->getTimestamp();
     }
 
-    if(node->numDependentNodes() == 0){
-        std::cerr << "Error, node does not have children\n";
-        node->wasMade(true);
-        return node->getTimestamp();
+    if(node->graphNode()->numDependentNodes() == 0){
+        node->graphNode()->wasMade(true);
+        return node->graphNode()->getTimestamp();
     }
 
     long maxTimestamp = 0;
 
-    for(int dependent = 0; dependent < node->numDependentNodes(); dependent++){
-       maxTimestamp = std::max(maxTimestamp, updateTimeStamp(node->dependentNodes()->at(dependent)));
+    for(int dependent = 0; dependent < node->graphNode()->numDependentNodes(); dependent++){
+       maxTimestamp = std::max(maxTimestamp, updateTimeStamp(makeTree, makeTree.find(node->graphNode()->dependentNodes()->at(dependent)->getName())));
     }
 
     if(maxTimestamp != 0){
-        node->runCommand();
+        node->graphNode()->runCommand();
     }
 
+    node->graphNode()->setTimestamp(maxTimestamp);
+    node->graphNode()->wasMade(true);
+    return node->graphNode()->getTimestamp();
+
+
+
+}
+
+void Graph::traverseGraph(MakeTree makeTree, TreeNode* node) {
+    if(node->graphNode()->isATarget()){
+
+        updateTimeStamp(makeTree,node);
+
+
+        //long timestamp = node->graphNode()->getTimestamp();
+        /*
+        for(int dep = 0; dep < node->graphNode()->numDependentNodes(); dep++){
+
+            TreeNode* treeNode = makeTree.find(node->graphNode()->dependentNodes()->at(dep)->getName());
+            if(treeNode != nullptr){
+                long depTimestamp = node->graphNode()->dependentNodes()->at(dep)->getTimestamp();
+
+                if(timestamp < depTimestamp){
+                    updateTimeStamp(node->graphNode());
+                }
+
+
+            }
+        }
+         */
+    }
+
+    if(node->left() != nullptr){
+        traverseGraph(makeTree, node->left());
+    }
+    if(node->right() != nullptr){
+        traverseGraph(makeTree, node->right());
+    }
+
+   return;
 
 
 

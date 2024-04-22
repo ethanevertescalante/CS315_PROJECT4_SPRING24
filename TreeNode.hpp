@@ -17,6 +17,7 @@ public:
     void right( TreeNode *rightPtr );
     void print();   // print the value of this node
     GraphNode *graphNode();
+    GraphNode *graphNode(GraphNode * graphNode);
 
 private:
     GraphNode *makeNode;

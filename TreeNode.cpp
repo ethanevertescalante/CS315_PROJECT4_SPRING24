@@ -40,3 +40,8 @@ void TreeNode::print() {
 GraphNode* TreeNode::graphNode() {
     return makeNode;
 }
+
+GraphNode* TreeNode::graphNode(GraphNode *graphNode) {
+    makeNode = graphNode;
+    return makeNode;
+}
