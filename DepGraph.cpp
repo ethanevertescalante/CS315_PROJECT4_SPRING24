@@ -132,6 +132,8 @@ bool Graph::isCyclic(MakeTree makeTree ,TreeNode* node) {
 //TODO::Something with updatedTimeStamp is wrong, find out what it is
 long Graph::updateTimeStamp(MakeTree makeTree,TreeNode * node) {
     //taken from Graph Algorithms Page on CS355 Canvas
+
+
     if(node->graphNode()->wasMade()){
         return node->graphNode()->getTimestamp();
     }
@@ -147,11 +149,14 @@ long Graph::updateTimeStamp(MakeTree makeTree,TreeNode * node) {
        maxTimestamp = std::max(maxTimestamp, updateTimeStamp(makeTree, makeTree.find(node->graphNode()->dependentNodes()->at(dependent)->getName())));
     }
 
-    if(maxTimestamp != 0){
+
+    if(maxTimestamp != 0) {
         node->graphNode()->runCommand();
     }
 
-    node->graphNode()->setTimestamp(maxTimestamp);
+
+    //node->graphNode()->setTimestamp(maxTimestamp);
+    //node->graphNode()->setTimestamp(timestampForFile(node->graphNode()->getName()));
     node->graphNode()->wasMade(true);
     return node->graphNode()->getTimestamp();
 

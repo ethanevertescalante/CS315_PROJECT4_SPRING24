@@ -14,7 +14,7 @@ lunch: bread bacon lettuce tomatoes fruit-salad
 bread: wheat water
 	touch bread
 
-fruit-salad: berries melon cantaloupe lunch
+fruit-salad: berries melon cantaloupe
 	touch fruit-salad
 
 garden-salad: lettuce endive tomatoes radishes carrots cucumbers
